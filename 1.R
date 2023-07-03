@@ -21,6 +21,7 @@ npptransfer <- read_rba(series_id="CCDEPNPPTVSA")
 
 ## variables for factor estimation
 cash_rate = read_cashrate()
+m1 <- read_rba(series_id="DMAM1S")
 
 ##### add zero values for extending npptransfer time series
 # Create a data frame with the desired time period and zero values

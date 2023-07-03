@@ -19,6 +19,9 @@ debitcardtransfer<- read_rba(series_id = "CCDEPDEPDTVSA")
 directentrypaymenttransfer<- read_rba(series_id = "CCDEPDEPTVSA")
 npptransfer <- read_rba(series_id="CCDEPNPPTVSA")
 
+## variables for factor estimation
+cash_rate = read_cashrate()
+
 ##### add zero values for extending npptransfer time series
 # Create a data frame with the desired time period and zero values
 new_data <- data.frame(date = seq.Date(as.Date("2002-01-31"), 
